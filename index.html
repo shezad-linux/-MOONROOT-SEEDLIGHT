@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy information for Moonroot: Seedlight, including local game data, age choices, advertising, consent, and purchases.">
+  <meta name="theme-color" content="#132b27">
+  <title>Privacy Policy — Moonroot: Seedlight</title>
+  <style>
+:root {
+  color-scheme: light;
+  --night: #132b27;
+  --night-soft: #1b3933;
+  --moss: #35584c;
+  --gold: #d0b875;
+  --paper: #f4f3ec;
+  --ink: #182721;
+  --body: #41534a;
+  --muted: #748078;
+  --line: #d8ddd2;
+  --alert: #7b4a24;
+  --serif: Georgia, 'Times New Roman', serif;
+  --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 24px; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 16px/1.78 var(--sans);
+  -webkit-font-smoothing: antialiased;
+}
+a { color: #315c4d; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: #6c5a2e; }
+a:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; border-radius: 2px; }
+.skip-link {
+  position: absolute; left: 16px; top: -60px; z-index: 10;
+  padding: 10px 14px; background: white; color: var(--night);
+}
+.skip-link:focus { top: 12px; }
+
+.masthead { color: #f5f2e8; background: var(--night); overflow: hidden; }
+.masthead-inner {
+  height: 76px; max-width: 1280px; margin: 0 auto; padding: 0 42px;
+  display: flex; align-items: center; justify-content: space-between;
+  border-bottom: 1px solid rgba(230, 231, 208, .16);
+}
+.brand { display: inline-flex; align-items: center; gap: 12px; color: #f5f2e8; text-decoration: none; font-size: 12px; font-weight: 700; letter-spacing: .16em; }
+.brand i, .policy-footer i { color: var(--gold); font-style: normal; }
+.brand-mark { width: 22px; height: 22px; display: grid; place-items: center; border: 1px solid rgba(208,184,117,.7); border-radius: 50%; }
+.brand-mark span { display: block; width: 7px; height: 7px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 12px rgba(208,184,117,.8); }
+.document-label, .eyebrow, .contents-title, .section-index { font-size: 10px; font-weight: 700; letter-spacing: .17em; }
+.document-label { color: #acbaad; }
+
+.hero {
+  position: relative; max-width: 1280px; min-height: 355px; margin: 0 auto; padding: 54px 42px 40px;
+  display: flex; align-items: center; border-bottom: 1px solid rgba(230, 231, 208, .16);
+}
+.hero-copy { position: relative; z-index: 1; width: min(650px, 68%); animation: hero-enter .75s cubic-bezier(.2,.7,.2,1) both; }
+.hero .eyebrow { margin: 0 0 16px; color: var(--gold); }
+h1 { margin: 0; font: 600 clamp(48px, 7vw, 76px)/.98 var(--serif); letter-spacing: -.04em; }
+h1 em { color: var(--gold); font-weight: 500; }
+.intro { max-width: 580px; margin: 21px 0 17px; color: #d2ddd3; font-size: 16px; line-height: 1.7; }
+.updated { margin: 0; color: #9aada2; font-size: 12px; letter-spacing: .02em; }
+.updated time { margin-left: 6px; color: #e6e4d8; }
+.hero-rule { position: absolute; left: 42px; bottom: -1px; width: 110px; height: 2px; background: var(--gold); }
+
+.moon-art { position: absolute; width: 290px; height: 290px; right: 90px; top: 29px; opacity: .75; }
+.moon { position: absolute; width: 116px; height: 116px; left: 87px; top: 52px; border-radius: 50%; background: radial-gradient(circle at 35% 35%, #f4edcf 0, #c6bc93 37%, #819487 72%, #526e64 100%); box-shadow: 0 0 70px rgba(211,202,158,.18); animation: moon-breathe 6s ease-in-out infinite; }
+.moon::after { content: ''; position: absolute; width: 118px; height: 118px; left: 17px; top: -8px; border-radius: 50%; background: var(--night); }
+.orbit { position: absolute; border: 1px solid rgba(208,184,117,.35); border-radius: 50%; transform: rotate(-28deg); }
+.orbit-one { width: 242px; height: 86px; left: 23px; top: 70px; animation: orbit-one-turn 42s linear infinite; }
+.orbit-two { width: 198px; height: 260px; left: 44px; top: 10px; transform: rotate(38deg); border-color: rgba(172,194,173,.25); animation: orbit-two-turn 58s linear infinite; }
+.root { position: absolute; bottom: 16px; width: 1px; height: 92px; background: linear-gradient(rgba(208,184,117,.62), transparent); transform-origin: top; }
+.root-one { left: 122px; transform: rotate(30deg); animation: root-one-sway 7s ease-in-out infinite; }
+.root-two { left: 151px; height: 75px; transform: rotate(-22deg); animation: root-two-sway 8s ease-in-out infinite; }
+
+@keyframes hero-enter { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes moon-breathe { 50% { box-shadow: 0 0 88px rgba(211,202,158,.3); } }
+@keyframes orbit-one-turn { to { transform: rotate(332deg); } }
+@keyframes orbit-two-turn { to { transform: rotate(398deg); } }
+@keyframes root-one-sway { 50% { transform: rotate(34deg) scaleY(.88); } }
+@keyframes root-two-sway { 50% { transform: rotate(-26deg) scaleY(.9); } }
+
+.layout { max-width: 1130px; margin: 0 auto; padding: 65px 42px 80px; display: grid; grid-template-columns: 215px minmax(0, 720px); gap: 78px; align-items: start; }
+.contents { position: sticky; top: 28px; padding-top: 4px; }
+.contents-title { color: var(--muted); margin: 0 0 17px; }
+.contents nav { display: flex; flex-direction: column; border-left: 1px solid var(--line); }
+.contents nav a { position: relative; padding: 7px 0 7px 14px; color: #5e6a61; font-size: 12px; line-height: 1.45; text-decoration: none; }
+.contents nav a:hover { color: var(--night); }
+.contents nav a:hover::before { content: ''; position: absolute; left: -1px; top: 7px; bottom: 7px; width: 2px; background: var(--gold); }
+.contents-note { margin: 28px 0 0; color: var(--muted); font-size: 11px; line-height: 1.7; }
+.contents-note strong { color: var(--moss); font-size: 10px; letter-spacing: .03em; }
+
+.policy { min-width: 0; }
+.policy section { margin: 0 0 52px; scroll-margin-top: 28px; }
+.summary { padding: 4px 0 29px 25px; border-left: 2px solid var(--gold); border-bottom: 1px solid var(--line); margin-bottom: 49px !important; }
+.summary .eyebrow { margin: 0 0 9px; color: #806e39; }
+.summary h2 { margin: 0 0 12px; font: 600 27px/1.25 var(--serif); letter-spacing: -.02em; }
+.summary p:last-child { max-width: 660px; margin: 0; color: var(--body); font-size: 14px; }
+.section-index { margin: 0 0 9px; color: #8a946f; }
+.section-index span { padding: 0 4px; color: var(--gold); }
+.policy h2 { margin: 0 0 17px; font: 600 30px/1.22 var(--serif); letter-spacing: -.025em; color: #1b3029; }
+.policy h3 { margin: 0 0 6px; font-size: 14px; font-weight: 700; color: #243b31; }
+.policy p, .policy li { color: var(--body); font-size: 14px; }
+.policy p { margin: 0 0 14px; }
+.policy ul { margin: 11px 0 0; padding-left: 20px; }
+.policy li { padding-left: 4px; margin: 0 0 9px; }
+.policy li::marker { color: #9b8950; }
+.data-row { display: grid; grid-template-columns: 145px 1fr; gap: 21px; padding: 15px 0; border-top: 1px solid var(--line); }
+.data-row h3 { padding-top: 2px; }
+.data-row p { margin: 0; }
+.policy address { margin-top: 18px; padding: 17px 20px; border-left: 2px solid var(--gold); background: rgba(255,255,255,.34); color: var(--body); font-size: 13px; font-style: normal; line-height: 2; }
+.replace { color: #743f1f; background: #f3e7cf; padding: 1px 4px; }
+.optional { color: #596a60; }
+.policy-footer { display: flex; justify-content: space-between; gap: 20px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 11px; }
+.policy-footer a { font-weight: 700; text-decoration: none; }
+
+.publish-note { max-width: 1046px; margin: 0 auto 42px; padding: 14px 18px; border-top: 1px solid #d4c59a; border-bottom: 1px solid #d4c59a; color: #695c3d; font-size: 12px; line-height: 1.65; }
+.publish-note strong { color: #624923; }
+
+@media (max-width: 820px) {
+  .masthead-inner { height: 66px; padding: 0 24px; }
+  .hero { min-height: 325px; padding: 46px 24px 37px; }
+  .hero-copy { width: min(620px, 80%); }
+  .moon-art { right: -36px; opacity: .45; transform: scale(.82); }
+  .hero-rule { left: 24px; }
+  .layout { padding: 42px 24px 62px; grid-template-columns: 1fr; gap: 34px; }
+  .contents { position: static; padding: 0 0 20px; border-bottom: 1px solid var(--line); }
+  .contents nav { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); column-gap: 18px; }
+  .contents-note { display: none; }
+  .publish-note { margin: 0 24px 30px; }
+}
+@media (max-width: 520px) {
+  body { font-size: 15px; }
+  .masthead-inner { padding: 0 18px; }
+  .brand { gap: 8px; font-size: 10px; }
+  .brand-mark { width: 19px; height: 19px; }
+  .document-label { font-size: 8px; }
+  .hero { min-height: 300px; padding: 40px 18px 33px; }
+  .hero-copy { width: 100%; }
+  h1 { font-size: 54px; }
+  .intro { max-width: 360px; font-size: 14px; }
+  .moon-art { right: -112px; top: 35px; opacity: .24; transform: scale(.72); }
+  .hero-rule { left: 18px; width: 75px; }
+  .layout { padding: 32px 18px 48px; }
+  .contents nav { grid-template-columns: 1fr 1fr; column-gap: 12px; }
+  .contents nav a { font-size: 11px; }
+  .summary { padding-left: 16px; }
+  .summary h2 { font-size: 23px; }
+  .policy h2 { font-size: 26px; }
+  .policy p, .policy li { font-size: 13px; }
+  .data-row { grid-template-columns: 1fr; gap: 4px; padding: 13px 0; }
+  .policy-footer { flex-direction: column; gap: 5px; }
+  .publish-note { margin: 0 18px 24px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; }
+}
+@media print {
+  :root { --paper: #fff; --ink: #111; --body: #222; }
+  body { background: white; font-size: 11pt; }
+  .masthead { background: white; color: #111; border-bottom: 2px solid #132b27; }
+  .masthead-inner { height: auto; padding: 14px 0; border-color: #bbb; }
+  .brand, .document-label, .hero .eyebrow, .intro, .updated, .updated time { color: #222; }
+  .hero { min-height: 0; padding: 22px 0; }
+  .hero-copy { width: 100%; }
+  h1 { font-size: 38pt; color: #132b27; }
+  h1 em { color: #132b27; }
+  .moon-art, .contents, .skip-link, .hero-rule, .publish-note, .policy-footer a { display: none !important; }
+  .layout { display: block; max-width: none; padding: 25px 0; }
+  .policy section { break-inside: avoid; margin-bottom: 28px; }
+  .policy a { color: #111; text-decoration: underline; }
+  .replace { background: none; border-bottom: 1px solid #777; }
+}
+
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to privacy policy</a>
+
+  <header class="masthead" id="top">
+    <div class="masthead-inner">
+      <a class="brand" href="#top" aria-label="Moonroot: Seedlight privacy policy home">
+        <span class="brand-mark" aria-hidden="true"><span></span></span>
+        <span>MOONROOT <i>·</i> SEEDLIGHT</span>
+      </a>
+      <span class="document-label">PRIVACY POLICY</span>
+    </div>
+    <div class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">A clear guide to your game data</p>
+        <h1>Privacy<br><em>Policy</em></h1>
+        <p class="intro">This page explains what Moonroot: Seedlight stores on your device and what its advertising and store services may process.</p>
+        <p class="updated">Effective date <time datetime="2026-11-02">November 2, 2026</time></p>
+      </div>
+      <div class="moon-art" aria-hidden="true"><span class="moon"></span><span class="orbit orbit-one"></span><span class="orbit orbit-two"></span><span class="root root-one"></span><span class="root root-two"></span></div>
+      <div class="hero-rule" aria-hidden="true"></div>
+    </div>
+  </header>
+
+  <main id="main" class="layout">
+    <aside class="contents" aria-label="Policy contents">
+      <p class="contents-title">IN THIS POLICY</p>
+      <nav>
+        <a href="#who">Who publishes the game</a>
+        <a href="#data">Data the game uses</a>
+        <a href="#ads">Advertising and consent</a>
+        <a href="#purchases">Store purchases</a>
+        <a href="#sharing">Who receives data</a>
+        <a href="#retention">Storage and deletion</a>
+        <a href="#children">Children and age groups</a>
+        <a href="#rights">Your choices</a>
+        <a href="#security">Security and changes</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="contents-note">For the Android game<br><strong>com.moonroot.seedlight</strong></p>
+    </aside>
+
+    <article class="policy">
+      <section class="summary" aria-labelledby="summary-title">
+        <p class="eyebrow">THE SHORT VERSION</p>
+        <h2 id="summary-title">Your progress stays on your device.</h2>
+        <p>The game stores progress, settings, and the age range you choose in local app storage. If advertising is available, Google’s Mobile Ads and consent services may process device and ad-use information. The game does not ask for an exact birth date or require an account.</p>
+      </section>
+
+      <section id="who">
+        <p class="section-index">01 <span>·</span> ABOUT THIS POLICY</p>
+        <h2>Who publishes the game</h2>
+        <p>Moonroot: Seedlight (the “Game”) is published by <strong class="replace">[PUBLISHER LEGAL NAME — replace before publishing]</strong> (“we,” “us,” or “our”). This policy applies to the Game’s Android app and its in-game services.</p>
+        <p>This policy explains how the Game handles information when you play and when you use its advertising or store services.</p>
+      </section>
+
+      <section id="data">
+        <p class="section-index">02 <span>·</span> INFORMATION</p>
+        <h2>Data the Game uses</h2>
+        <div class="data-row">
+          <h3>Saved game data</h3>
+          <p>Progress and preferences such as Dew, level completion, checkpoints, collected items, music and sound levels, vibration, and screen-shake settings. This information is saved in the app’s local storage to keep your game state between sessions.</p>
+        </div>
+        <div class="data-row">
+          <h3>Age range choice</h3>
+          <p>The Game asks you to select an age range: 12 or younger, 13–20, 21 or older, or “Prefer not to say.” The selected group and a rule-version value are saved locally. The current screen does not ask for or save your exact date of birth.</p>
+        </div>
+        <div class="data-row">
+          <h3>Advertising and device data</h3>
+          <p>When Google Mobile Ads is used, its SDK may automatically collect and share an IP address, app and ad interactions, diagnostics and performance information, and device or account identifiers. An IP address may be used to estimate general location. Google describes these data practices in its <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" target="_blank" rel="noopener noreferrer">Google Mobile Ads data disclosure</a>.</p>
+        </div>
+        <div class="data-row">
+          <h3>Consent choices</h3>
+          <p>Google’s User Messaging Platform (UMP) may process consent status and privacy choices so the Game can determine whether an ad request is allowed and show a required privacy message. See <a href="https://developers.google.com/admob/unity/privacy" target="_blank" rel="noopener noreferrer">Google’s UMP information</a>.</p>
+        </div>
+      </section>
+
+      <section id="ads">
+        <p class="section-index">03 <span>·</span> ADVERTISING</p>
+        <h2>Advertising and consent</h2>
+        <p>The current implementation can request a banner ad on the main menu after an age group is selected, consent checks are complete, and the Game determines the player is eligible. The “Prefer not to say” choice does not enable ads. Child and teen age treatments and a general-audience content rating are sent in ad request configuration.</p>
+        <p>Whether an ad is personalized depends on the consent choices, applicable settings, and Google’s services. Google may process information for advertising, measurement, analytics, and fraud prevention. Google’s processing is also governed by its own <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.</p>
+        <p>The Game checks consent through UMP and requests ads only when the SDK reports that ads can be requested. If consent or SDK setup fails, the Game suppresses the ad request. The available privacy-options control appears in the Game’s Settings when the consent service says it is required.</p>
+      </section>
+
+      <section id="purchases">
+        <p class="section-index">04 <span>·</span> PURCHASES</p>
+        <h2>Store purchases</h2>
+        <p>If an in-app purchase is offered, Google Play handles payment and provides the Game with purchase and product information needed to process the transaction. The Game does not receive your full payment-card number. Google Play and Unity IAP may process transaction, receipt, product, and purchase-status information under their own terms and privacy policies.</p>
+        <p>The current code includes a store-purchase integration, but product availability and purchase flows depend on the active store configuration. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google’s Privacy Policy</a> for Google services.</p>
+      </section>
+
+      <section id="sharing">
+        <p class="section-index">05 <span>·</span> SERVICE PROVIDERS</p>
+        <h2>Who receives data</h2>
+        <ul>
+          <li><strong>Google Mobile Ads and UMP:</strong> may receive the ad, device, diagnostic, interaction, and consent information described above to provide advertising and privacy-message services.</li>
+          <li><strong>Google Play:</strong> processes app distribution and any in-app purchase transactions made through Google Play.</li>
+          <li><strong>Android backup:</strong> if enabled in your device or Google account settings, Android may back up app data and restore it to a device. Android’s default app-backup behavior is described in its <a href="https://developer.android.com/identity/data/autobackup" target="_blank" rel="noopener noreferrer">Auto Backup documentation</a>.</li>
+        </ul>
+        <p>We do not operate an account system or a game server for player progress in the current version. We do not receive the local save data through the Game’s own code.</p>
+      </section>
+
+      <section id="retention">
+        <p class="section-index">06 <span>·</span> STORAGE</p>
+        <h2>Storage and deletion</h2>
+        <p>Game progress, settings, and the selected age group remain in app storage until they are overwritten or removed. You can remove local data through Android’s app-storage settings or uninstall the Game. If Android backup is enabled, backed-up app data may be restored according to your device settings.</p>
+        <p>Google’s ad and consent services control retention for data they collect. Refer to Google’s privacy information and account controls for details about those records. The publisher does not have a server-side player account from which to delete a profile.</p>
+      </section>
+
+      <section id="children">
+        <p class="section-index">07 <span>·</span> AGE GROUPS</p>
+        <h2>Children and age groups</h2>
+        <p>The Game offers age-group choices and does not request a precise birth date in the current screen. If “12 or younger” or “13–20” is selected, the ad SDK receives the corresponding child or teen treatment. Ad requests use a general-audience content rating. A missing or declined age choice does not enable ads.</p>
+        <p>These age bands are the Game’s current technical settings; they are not a statement that one age threshold satisfies every country’s law or store policy. The publisher must review the target-audience and family-policy settings for each intended market and keep the Play Console declarations consistent with this policy.</p>
+      </section>
+
+      <section id="rights">
+        <p class="section-index">08 <span>·</span> YOUR CHOICES</p>
+        <h2>Your privacy choices</h2>
+        <ul>
+          <li>Choose an age range on the Game’s first screen, or choose “Prefer not to say” to keep ads off.</li>
+          <li>When the Game shows a Privacy Options control in Settings, use it to reopen Google’s consent choices.</li>
+          <li>Use Android settings to reset or remove the Game’s local data and to manage device advertising or backup settings.</li>
+          <li>For questions about data handled by Google, use the privacy and account controls linked in Google’s policies.</li>
+        </ul>
+      </section>
+
+      <section id="security">
+        <p class="section-index">09 <span>·</span> SAFEGUARDS</p>
+        <h2>Security and policy changes</h2>
+        <p>Local game data is stored in Android app storage. The Game does not add its own encryption layer to that save data. Google states that Google Mobile Ads SDK data is encrypted in transit using TLS; third-party services apply their own security controls.</p>
+        <p>We may update this policy when the Game or its services change. The effective date at the top of this page identifies the latest version. If a change materially affects the Game’s data practices, we will update this page and provide any notice required by applicable law.</p>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <p class="section-index">10 <span>·</span> GET IN TOUCH</p>
+        <h2>Contact</h2>
+        <p>For privacy questions or requests, contact the publisher:</p>
+        <address>
+          <strong class="replace">[PUBLISHER LEGAL NAME — replace before publishing]</strong><br>
+          Email: <strong class="replace">[PRIVACY CONTACT EMAIL — replace before publishing]</strong><br>
+          Postal address: <strong class="optional">[Add a postal address if required for your markets]</strong>
+        </address>
+      </section>
+
+      <footer class="policy-footer">
+        <a href="#top">Back to top ↑</a>
+        <span>Moonroot: Seedlight <i>·</i> Privacy Policy</span>
+      </footer>
+    </article>
+  </main>
+
+  <aside class="publish-note" aria-label="Publisher setup reminder">
+    <strong>Publisher setup required:</strong> replace the marked legal name and privacy contact before hosting. Confirm this policy against the final SDK build and Play Console Data safety declarations.
+  </aside>
+</body>
+</html>
